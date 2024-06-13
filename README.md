@@ -1,23 +1,3 @@
-# jobhunter
-
-*Kliensoldali webprogramozás 2. beadandó*
-## Nyilatkozat
-Kérlek, töltsétek ki az adataitokkal beadás előtt!
-
-```
-<BANK BÁLINT DÁNIEL>
-<V90WCP>
-Kliensoldali webprogramozás - beadandó
-Ezt a megoldást a fent írt hallgató küldte be és készítette a Kliensoldali webprogramozás kurzus számonkéréséhez.
-Kijelentem, hogy ez a megoldás a saját munkám. Nem másoltam vagy használtam harmadik féltől
-származó megoldásokat. Nem továbbítottam megoldást hallgatótársaimnak, és nem is tettem közzé.
-Az Eötvös Loránd Tudományegyetem Hallgatói Követelményrendszere
-(ELTE szervezeti és működési szabályzata, II. Kötet, 74/C. §) kimondja, hogy mindaddig,
-amíg egy hallgató egy másik hallgató munkáját - vagy legalábbis annak jelentős részét -
-saját munkájaként mutatja be, az fegyelmi vétségnek számít.
-A fegyelmi vétség legsúlyosabb következménye a hallgató elbocsátása az egyetemről.
-```
-
 ## **A feladat leírása**
 
 A feladat egy álláskereső oldal létrehozása, ami segíti a felhasználókat a munkakeresésben. A weboldalra kétféle felhasználót tudunk regisztrálni: **munkavállalót**, vagy **munkáltatót**. Mindkét szerepkör más-más funkciókat ér el.
@@ -219,52 +199,3 @@ Munkáltatóként bejelentkezve a végpont segítségével visszavonhatjuk az á
 #### applicants for a job / jobs for an applicant
 Munkáltatóként lekérhetjük az álláshirdetésünkre jelentkezett felhasználókat, munkavállalóként pedig lekérhető a bejelentkezett felhasználó összes állásjelentkezése.
 
-## **Adatbázis**
-
-A mentett adatok egy lokális SQLite táblában jelennek meg: `rest-api.sqlite`. Ezt pl. a [DB Browser for SQLite](https://sqlitebrowser.org/) programmal tudunk megnézni, módosítani.
-
-## **További információk**
-
-Elvárás az igényes megjelenés. Ehhez használhatsz saját CSS-t is, de komponens függvénykönyvárakat is, mint pl. [DaisyUI](https://daisyui.com/), [shadcn/ui](https://ui.shadcn.com/), [Material UI](https://mui.com/) vagy [Bootstrap](https://react-bootstrap.github.io/).
-
-## **Feltöltendő**
-
-Az egész projektet tömörítsd be, kliensestül, szerverestül, és azt töltsd föl. **Beadás (tömörítés) előtt a `node_modules` mappákat(!) mindenképpen töröld!**
-
-Az elkészült program beadása a Canvasen történik, és két dolgot kell ide feltöltenetek. Erre azért van szükség, hogy megkönnyítsétek a gyakorlatvezetőitek dolgát, és a linket megtekintve ki tudják próbálni a projekteteket. Ne feledjétek, hogy a határidő fix, ezzel késni nem tudtok!
-
-1. StackBlitz - [https://stackblitz.com/](https://stackblitz.com/) Hozzatok létre egy új projektet itt, vagy kössétek össze a GitHub repotokkal, és készítsetek egy megosztható linket a projektből, úgy, hogy csak a linkkel lehessen elérni azt. Ne publikáljátok, hiszen akkor megvan az esély arra, hogy más rátalál a projektetekre, és ilyenkor kódegyezés esetén ezt nem fogjuk tudni kinyomozni.
-2. Fájlok feltöltése tömörített mappaként. Beadás előtt a `node_modules` mappa törlendő! Beadás előtt próbáljátok ki, hogy az alábbi utasításokkal működik:
-
-## **Pontozás**
-
-- [x] Ennek a README.md fájlnak a  kitöltése. (kötelező)
-- [X] React használata (kötelező)
-- [X] Redux használata (kötelező)
-- [X] Navigáció: Navigáció megfelelően változik a be- és kijelentkezésnek megfelelően (1pt)
-- [X] Navigáció: Az oldal kezeli, hogy munkáltatóként vagy munkavállalóként jelentkezünk be, más más navigációt jelenít meg (1pt)
-- [X] Főoldal: A Főoldal megjelenik a keresővel (1pt)
-- [X] Főoldal: Az oldalon kilistázza a meghirdetett állásokat (1pt)
-- [X] Főoldal: Az oldalon lehet szűrni az állásokra (2pt)
-- [X] Főoldal: Az állásokra kattintva átvisz minket az alkalmazás az álláshirdetés részletező oldalára, ahol az ahhoz tartozó adatok jelennek meg (2pt)
-- [X] Regisztráció: A regisztráció működik (1pt)
-- [X] Regisztráció: A felhasználó munkavállalóként és munkáltatóként is regisztrálhat, különböző mezők jelennek meg a leendő fiók típusától függően (3pt)
-- [X] Regisztráció: Munkavállaló regisztráció esetén a felhasználó meg tudja adni a tapasztalatait (2pt)
-- [X] Bejelentkezés: Bejelentkezés működik (1pt)
-- [X] Munkavállaló - Profilom: Látszódnak a munkavállaló adatai (név, email cím), és az oldalon kilistázza az előző munkahelyeket (1pt)
-- [X] Munkavállaló - Profilom: A korábban hozzáadott munkatapasztalatok szerkeszthetőek (1pt)
-- [X] Munkavállaló - Álláshirdetések oldala: A gomb megjelenik, amivel az állásra tudunk jelentkezni. Sikeres kérés esetén a felhasználó számára megjelenik egy üzenet a sikeres jelentkezésről (1 pont)
-- [X] Munkáltató - Navigáció: Kizárólag bejelentkezett munkáltató esetén jelenik meg az álláshirdetés hozzáadása opció (1pt)
-- [X] Munkáltató - Profilom: Listázásra kerülnek a hozzáadott álláshirdetések, az egyes listaelemek mellett a szerkesztés, törlés és megtekintés opciók, megjelenik a “Hozzáadás” gomb (2pt)
-- [X] Munkáltató - Profilom: A megtekintés gomb hatására a felhasználó számára listázásra kerülnek az adott hirdetésre jelentkezett munkavállalók (1pt)
-- [X] Munkáltató - Profilom: Álláshirdetés törlése működik (1pt)
-- [X] Munkáltató - Álláshirdetés hozzáadása: Álláshirdetés hozzáadása működik (2pt)
-- [X] Munkáltató - Profilom: Álláshirdetés szerkesztése működik (2pt)
-- [X] Profilom: Kijelentkezés gomb működik(1pt)
-- [X] Igényes megjelenés (2pt)
-
-Összesen: 30 pont (Minimum: 12 pont)
-
-- [ ] Plusz feladat: az álláshirdetések listája infinite-scrollinggal jelenik meg (+2pt)
-- [ ] Plusz feladat: az álláshirdetések létrehozásánál a munkáltató egy range-sliderrel tudja megadni a fizetés minimum és maximum értékét (+2pt)
-- [X] Plusz feladat: Modalban jelenik meg az oldal valamely része (vagy az álláshirdetés leírása, vagy a az álláshirdetésre jelentkező emberek listája, akár a profiljai) (+1pt)
